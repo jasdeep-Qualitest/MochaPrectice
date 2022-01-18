@@ -1,7 +1,7 @@
 const expectChai= require('chai').expect
 
 describe("How to Apply Sort the Web tables using WebDriverIO",async ()=>{
-xit("table sorting",async ()=>{
+it("table sorting",async ()=>{
       browser.url("https://rahulshettyacademy.com/seleniumPractise/#/offers")
       await $("tr th:nth-child(1)").click();
      await browser.pause(3000)
@@ -11,12 +11,12 @@ xit("table sorting",async ()=>{
       {
           
           farray[i]=await VegArray[i].getText()                     // get text from html elements
-      }
-
+       }
+    //  const farray =  VegArray.map((item) => item.getText()) 
 
       copyfarray=farray.slice()
        console.log("sorted array")
-       console.log(farray)
+       console.log( farray)
       
 
 

@@ -1,4 +1,4 @@
-xdescribe("java Script Alerts ", async ()=>{
+describe("java Script Alerts ", async ()=>{
     it('Handling JavaScript related Alerts With Wdio', async ()=>{
         browser.url("http://only-testing-blog.blogspot.com/")
         

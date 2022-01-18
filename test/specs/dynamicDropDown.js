@@ -1,4 +1,4 @@
-xdescribe('Automation Testing', async ()=>{
+describe('Automation Testing', async ()=>{
     it('Dynamic Drop Down Testing' ,async ()=>{
 
         await browser.url('https://www.rahulshettyacademy.com/AutomationPractice/')
@@ -24,18 +24,18 @@ xdescribe('Automation Testing', async ()=>{
     });
 
     it('Select check box Test',async ()=>{
-      const checkbox1=await $$("input[type='checkbox']")
+      const checkbox1=await $$("input[type='checkbox']")                   // select  check box 
       await checkbox1[1].click()
       await checkbox1[1].isSelected()
           })
 
 
     it('Mouse Hover Test', async ()=>{
-
-     await $("#mousehover").scrollIntoView()
+ 
+     await $("#mousehover").scrollIntoView()                            // mouse hover using wdio
 
           
-     await $("#mousehover").moveTo()
+     await $("#mousehover").moveTo()                                     
     
 
      await $('=Top').click()

@@ -1,6 +1,6 @@
 
 const expectChai = require('chai').expect;
-xdescribe("Ecommerce Application",()=>
+describe("Ecommerce Application",()=>
 { it("Ui Control testin", async ()=>
 {
     await browser.url("https://www.rahulshettyacademy.com/loginpagePractise/")

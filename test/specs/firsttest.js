@@ -1,7 +1,7 @@
 
 
 
-xdescribe("first test ",()=>{
+describe("first test ",()=>{
     it("Login failed Page Title",async ()=>{
         // webdriver io code
     await browser.url("https://www.rahulshettyacademy.com/loginpagePractise/")
@@ -42,6 +42,7 @@ xdescribe("first test ",()=>{
       await $("#signInBtn").click();
 
       await $('*=Checkout').waitForExist();
+      
       await expect(browser).toHaveTitle("ProtoCommerce");
 
     });
